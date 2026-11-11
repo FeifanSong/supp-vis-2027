@@ -116,7 +116,7 @@ footer { text-align: center; color: var(--muted); font-size: 14px; padding: 24px
 
 <section id="video">
   <h2>Video</h2>
-  <p class="lead">Eight DAVIS-2017 clips (first 24 frames, 512&times;512), each frame graded <em>independently</em> toward a fixed reel, with no temporal model. Rows are films; columns are the input and four methods.</p>
+  <p class="lead">Eight DAVIS-2017 clips (first 24 frames, 512&times;512), each frame graded <em>independently</em> toward a fixed reel, with no temporal model. Rows are films; columns are the input and four methods. Warping error (RAFT flow, occlusion-masked; lower is steadier): input 0.0024, <b>APrint 0.0048</b>, StyleID 0.0056, FLUX.2 0.0093, StyleGallery 0.0193.</p>
   <div class="controls" role="group" aria-label="Clip">
     <span class="label">Clip</span>
     <span id="clips"></span>
@@ -129,7 +129,7 @@ footer { text-align: center; color: var(--muted); font-size: 14px; padding: 24px
   </div>
   <figure>
     <video id="player" src="video/horsejump-high.mp4" poster="video/horsejump-high.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
-    <figcaption><b id="clipname">horsejump-high</b>. Left: each film's representative frame. APrint holds tone, grain and texture from frame to frame; StyleGallery repaints strokes and colour patches on every frame. <span id="fluxnote">FLUX.2 is still running and will appear here when finished.</span></figcaption>
+    <figcaption><b id="clipname">horsejump-high</b>. Left: each film's representative frame. APrint holds tone, grain and texture from frame to frame; StyleGallery repaints strokes and colour patches on every frame. <span id="fluxnote">FLUX.2 lays nearly the same warm cast over all three films, black-and-white <em>Citizen Kane</em> included.</span></figcaption>
   </figure>
 </section>
 
