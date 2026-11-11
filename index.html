@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Film Look Transfer — Visual Results</title>
+<meta name="description" content="Supplementary visual results for 'Film Look Transfer: From a Reel of Frames to a New Shot' (anonymous submission).">
+<meta name="robots" content="noindex, nofollow">
+<style>
+:root {
+  --bg: #fbfaf8; --surface: #ffffff; --ink: #1d1b19; --muted: #6b655f; --rule: #e4dfd8;
+  --accent: #1e7a8c; --accent-soft: #e3f0f2; --pending: #9a9187;
+  --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141312; --surface: #1c1b19; --ink: #ece8e3; --muted: #a39d96; --rule: #2e2c29;
+    --accent: #5fb7c8; --accent-soft: #1b3237; --pending: #8a827a;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141312; --surface: #1c1b19; --ink: #ece8e3; --muted: #a39d96; --rule: #2e2c29;
+  --accent: #5fb7c8; --accent-soft: #1b3237; --pending: #8a827a; --shadow: none;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.6 "Times New Roman", Times, "Nimbus Roman", serif;
+  -webkit-font-smoothing: antialiased;
+}
+header.hero { max-width: 1180px; margin: 0 auto; padding: 56px 16px 24px; text-align: center; }
+header.hero h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.15; margin: 0 0 10px; font-weight: 700; }
+header.hero p { margin: 4px 0; color: var(--muted); }
+.anon { display: inline-block; margin-top: 10px; padding: 2px 10px; border: 1px solid var(--rule); border-radius: 999px; font-size: 14px; color: var(--muted); }
+nav.toc {
+  position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule);
+}
+nav.toc ul { max-width: 1180px; margin: 0 auto; padding: 8px 16px; list-style: none; display: flex; gap: 4px 18px; flex-wrap: wrap; justify-content: center; }
+nav.toc a { color: var(--muted); text-decoration: none; font-size: 15px; }
+nav.toc a:hover { color: var(--accent); }
+main { max-width: 1180px; margin: 0 auto; padding: 8px 16px 64px; }
+section { padding-top: 40px; }
+section > h2 { font-size: 26px; margin: 0 0 6px; }
+section > .lead { margin: 0 0 16px; color: var(--muted); max-width: 900px; }
+figure { margin: 0 0 22px; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 12px; box-shadow: var(--shadow); }
+figure img, figure video { display: block; width: 100%; height: auto; border-radius: 4px; background: #fff; }
+figure.narrow { max-width: 760px; margin-left: auto; margin-right: auto; }
+figcaption { margin-top: 10px; font-size: 15px; color: var(--muted); }
+figcaption b { color: var(--ink); }
+.two { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 900px) { .two { grid-template-columns: 1fr 1fr; } .two.wide-left { grid-template-columns: 2.1fr 1fr; } }
+.two figure { margin: 0; }
+a.zoom { cursor: zoom-in; display: block; }
+.controls { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; align-items: center; }
+.controls .label { color: var(--muted); font-size: 14px; margin-right: 4px; }
+.controls button {
+  font: inherit; font-size: 15px; padding: 4px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--rule); background: var(--surface); color: var(--ink);
+}
+.controls button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.controls .sep { width: 1px; height: 22px; background: var(--rule); margin: 0 8px; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; margin: 6px 0 0; font-size: 15px; min-width: 520px; }
+th, td { padding: 6px 12px; border-bottom: 1px solid var(--rule); text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+tr.ours td { color: var(--accent); font-weight: 700; }
+td.pending { color: var(--pending); font-style: italic; }
+footer { text-align: center; color: var(--muted); font-size: 14px; padding: 24px 16px 40px; border-top: 1px solid var(--rule); }
+.theme { position: fixed; right: 12px; bottom: 12px; font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); color: var(--muted); cursor: pointer; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>Film Look Transfer:<br>From a Reel of Frames to a New Shot</h1>
+  <p>Supplementary visual results</p>
+</header>
+
+<nav class="toc"><ul>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#results">Results</a></li>
+  <li><a href="#comparison">Comparison</a></li>
+  <li><a href="#video">Video</a></li>
+  <li><a href="#reel30">Reel-30</a></li>
+</ul></nav>
+
+<main>
+<section id="overview">
+  <h2>Overview</h2>
+  <p class="lead">A film's look belongs to the whole reel rather than to any one frame. APrint (AnswerPrint) takes a reel of frames from a film and grades a new, unseen shot toward that look, training-free on a frozen diffusion backbone. Click any image to open it at full resolution.</p>
+  <figure>
+    <a class="zoom" href="img/teaser.jpg"><img src="img/teaser.jpg" alt="Teaser: a reel of frames defines a film's look, which APrint transfers to a new shot" loading="lazy"></a>
+    <figcaption><b>Film look transfer.</b> A look is timed across hundreds of shots into one picture; APrint reads it from a reel of frames and applies it to a new shot.</figcaption>
+  </figure>
+</section>
+
+<section id="results">
+  <h2>Results</h2>
+  <p class="lead">One reel per row; the film's representative frame on the left, then six unseen photographs graded toward it.</p>
+  <figure>
+    <a class="zoom" href="img/aprint.jpg"><img src="img/aprint.jpg" alt="APrint results on eight films" loading="lazy"></a>
+    <figcaption><b>APrint across eight films</b>, from animation (AKIRA, The Triplets of Belleville, Spider-Man: Into the Spider-Verse, Feeling from Mountain and Water) to live action (Lawrence of Arabia, Citizen Kane, The Matrix, The Godfather). Zoom in for grain and texture.</figcaption>
+  </figure>
+</section>
+
+<section id="comparison">
+  <h2>Comparison with baselines</h2>
+  <p class="lead">Two films (Loving Vincent, top; Blade Runner, bottom), six targets, thirteen methods. Every method receives the same reel draw; multi-reference methods and editors receive all eight frames.</p>
+  <figure>
+    <a class="zoom" href="img/sota_new5.jpg"><img src="img/sota_new5.jpg" alt="Qualitative comparison of APrint with colour transfer, single-reference, multi-reference and editing baselines" loading="lazy"></a>
+    <figcaption><b>Qualitative comparison.</b> Left to right: reel and its medoid frame, target, MKL colour transfer, <b>APrint</b> (framed), StyleID, StyleSSP, DiffuseIT, InjectFusion, InstantStyle, StyleAligned, PnP, StyleGallery, Qwen-Image-Edit, FLUX.1 Kontext and FLUX.2. Colour transfer keeps structure but not texture; editors either keep the target almost unchanged or replace it with reel content.</figcaption>
+  </figure>
+</section>
+
+<section id="video">
+  <h2>Video</h2>
+  <p class="lead">Eight DAVIS-2017 clips (first 24 frames, 512&times;512), each frame graded <em>independently</em> toward a fixed reel, with no temporal model. Rows are films; columns are the input and four methods.</p>
+  <div class="controls" role="group" aria-label="Clip">
+    <span class="label">Clip</span>
+    <span id="clips"></span>
+  </div>
+  <div class="controls" role="group" aria-label="Speed">
+    <span class="label">Speed</span>
+    <button data-rate="0.25">0.25&times;</button>
+    <button data-rate="0.5" aria-pressed="true">0.5&times;</button>
+    <button data-rate="1">1&times; (24 fps)</button>
+  </div>
+  <figure>
+    <video id="player" src="video/horsejump-high.mp4" poster="video/horsejump-high.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
+    <figcaption><b id="clipname">horsejump-high</b>. Left: each film's representative frame. APrint holds tone, grain and texture from frame to frame; StyleGallery repaints strokes and colour patches on every frame. <span id="fluxnote">FLUX.2 is still running and will appear here when finished.</span></figcaption>
+  </figure>
+</section>
+
+
+<section id="reel30">
+  <h2>The Reel-30 benchmark</h2>
+  <p class="lead">Thirty films whose looks are compact within a film and separable between films, each represented by a reel of frames rather than a single still.</p>
+  <div class="two wide-left">
+    <figure>
+      <a class="zoom" href="img/reel30_circle.jpg"><img src="img/reel30_circle.jpg" alt="Reel-30 circular overview of thirty films" loading="lazy"></a>
+      <figcaption><b>Reel-30.</b> Each sector is one film, coloured by category. Inside out: compactness (solid bars), linear-probe identifiability (hatched bars) and the film's three most central frames. Chords join films whose CSD centroids are close.</figcaption>
+    </figure>
+    <figure>
+      <a class="zoom" href="img/reel30_legend.jpg"><img src="img/reel30_legend.jpg" alt="Key to the Reel-30 figure" loading="lazy"></a>
+      <figcaption><b>Key</b>: category colours, bar scales and chord widths.</figcaption>
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<footer>Anonymous supplementary page for review. All films are used for research only; frames remain the property of their rights holders.</footer>
+<button class="theme" id="theme" type="button">Theme</button>
+
+<script>
+(function () {
+  var CLIPS = ["horsejump-high", "dance-twirl", "car-roundabout", "train", "boat", "bear", "blackswan", "dog"];
+  var player = document.getElementById("player"), box = document.getElementById("clips");
+  var name = document.getElementById("clipname"), rate = 0.5;
+  CLIPS.forEach(function (c, i) {
+    var b = document.createElement("button");
+    b.textContent = c; b.setAttribute("aria-pressed", i === 0 ? "true" : "false");
+    b.addEventListener("click", function () {
+      box.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+      b.setAttribute("aria-pressed", "true");
+      player.poster = "video/" + c + ".jpg"; player.src = "video/" + c + ".mp4";
+      name.textContent = c;
+      player.play().catch(function () {});
+    });
+    box.appendChild(b);
+  });
+  player.addEventListener("loadedmetadata", function () { player.playbackRate = rate; });
+  document.querySelectorAll("[data-rate]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      document.querySelectorAll("[data-rate]").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+      b.setAttribute("aria-pressed", "true");
+      rate = parseFloat(b.dataset.rate); player.playbackRate = rate;
+    });
+  });
+  var root = document.documentElement, KEY = "flt-theme";
+  try { var t = localStorage.getItem(KEY); if (t) root.setAttribute("data-theme", t); } catch (e) {}
+  document.getElementById("theme").addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") === "dark" ||
+      (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+    var next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem(KEY, next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
